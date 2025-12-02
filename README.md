@@ -5,26 +5,31 @@ A modern, production-ready React application for connecting people through intel
 ## Tech Stack
 
 ### Core
+
 - **React 18** - Modern UI library with hooks and concurrent features
 - **TypeScript 5.3** - Type-safe JavaScript with strict mode enabled
 - **Vite 5** - Lightning-fast build tool and dev server with HMR
 
 ### Routing & State Management
+
 - **React Router v6** - Declarative client-side routing
 - **TanStack Query (React Query) v5** - Powerful async state management and server state caching
 
 ### Styling
+
 - **Tailwind CSS 3.4.17** - Utility-first CSS framework
 - **PostCSS** - CSS transformations and autoprefixer
 - **react-icons** - Comprehensive icon library (FontAwesome, Material, etc.)
 
 ### Testing
+
 - **Jest 29** - Delightful JavaScript testing framework
 - **React Testing Library 14** - Simple and complete testing utilities
 - **ts-jest** - TypeScript preprocessor for Jest
 - **jsdom** - JavaScript implementation of web standards
 
 ### Code Quality
+
 - **ESLint 8** - Pluggable linting utility with TypeScript support
 - **Prettier 3** - Opinionated code formatter
 - **TypeScript ESLint** - TypeScript-specific linting rules
@@ -72,6 +77,7 @@ The project uses TypeScript path aliases for cleaner imports:
 - `@ui/*` → `./src/ui/*`
 
 Example:
+
 ```typescript
 import { routeNames } from "@shared/constants/routes/routes";
 import Home from "@features/entrypoint/Home";
@@ -119,16 +125,19 @@ npm run preview
 ## Available Scripts
 
 ### Development
+
 - `npm run dev` - Start development server on port 3000
 - `npm run preview` - Preview production build locally
 
 ### Testing
+
 - `npm test` - Run all tests once
 - `npm run test:watch` - Run tests in watch mode (re-runs on file changes)
 - `npm run test:coverage` - Generate test coverage report
   - Coverage thresholds: 70% (branches, functions, lines, statements)
 
 ### Code Quality
+
 - `npm run lint` - Check for linting errors
 - `npm run lint:fix` - Automatically fix linting errors
 - `npm run format` - Format all code with Prettier
@@ -136,6 +145,7 @@ npm run preview
 - `npm run type-check` - Run TypeScript type checking without emitting files
 
 ### Build
+
 - `npm run build` - Type-check and build for production
 
 ## Code Quality & Formatting
@@ -143,6 +153,7 @@ npm run preview
 ### ESLint Configuration
 
 Located in [.eslintrc.cjs](.eslintrc.cjs):
+
 - Extends recommended rules for React and TypeScript
 - Prettier integration (no conflicts)
 - React Hooks rules enforcement
@@ -152,6 +163,7 @@ Located in [.eslintrc.cjs](.eslintrc.cjs):
 ### Prettier Configuration
 
 Located in [.prettierrc](.prettierrc):
+
 - Semicolons: **Yes**
 - Quotes: **Double quotes**
 - Tab width: **2 spaces**
@@ -162,6 +174,7 @@ Located in [.prettierrc](.prettierrc):
 ### VSCode Integration
 
 Format on save is enabled for:
+
 - TypeScript/TSX files
 - JavaScript/JSX files
 - JSON files
@@ -194,6 +207,7 @@ npm run test:coverage
 ### Coverage Requirements
 
 The project enforces 70% minimum coverage across:
+
 - Branch coverage
 - Function coverage
 - Line coverage
