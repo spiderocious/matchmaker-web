@@ -12,11 +12,11 @@ export function Input({
   const hasError = Boolean(error);
 
   const baseClasses =
-    "w-full px-4 py-2.5 rounded-input border text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-0";
+    "w-full px-4 py-2.5 rounded-input border text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-0 text-[#4d669a]";
 
   const stateClasses = hasError
     ? "border-border-error focus:border-border-error focus:ring-error/20"
-    : "border-border focus:border-border-focus focus:ring-primary/20";
+    : "border-[#cfd7e7] focus:border-border-focus focus:ring-primary/20";
 
   const disabledClasses = props.disabled
     ? "bg-gray-100 text-gray-400 cursor-not-allowed"

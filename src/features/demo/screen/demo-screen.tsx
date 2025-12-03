@@ -16,6 +16,7 @@ import {
   Show,
   Spinner,
   Loadable,
+  LinkButton,
 } from "@ui/components";
 import { FaHeart, FaPlus, FaEllipsisH, FaTimes } from "react-icons/fa";
 
@@ -100,7 +101,7 @@ export function DemoScreen() {
           </div>
 
           {/* Icon Buttons */}
-          <div>
+          <div className="mb-12">
             <h3 className="text-xl font-medium text-gray-800 mb-6">
               Icon Button
             </h3>
@@ -108,6 +109,38 @@ export function DemoScreen() {
               <IconButton icon={<FaEllipsisH />} variant="ghost" />
               <IconButton icon={<FaHeart />} variant="primary" />
               <IconButton icon={<FaTimes />} variant="ghost" />
+            </div>
+          </div>
+
+          {/* Link Buttons */}
+          <div>
+            <h3 className="text-xl font-medium text-gray-800 mb-6">
+              Link Button (Text Links with Animated Underline)
+            </h3>
+            <div className="flex flex-wrap gap-6 items-center">
+              <LinkButton variant="primary" href="#">
+                Primary Link
+              </LinkButton>
+              <LinkButton variant="secondary" href="#">
+                Secondary Link
+              </LinkButton>
+              <LinkButton variant="default" href="#">
+                Default Link
+              </LinkButton>
+              <LinkButton variant="primary" href="#" disabled>
+                Disabled Link
+              </LinkButton>
+            </div>
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+              <p className="text-sm text-gray-600 mb-2">
+                <strong>Note:</strong> Hover over links to see the animated
+                underline effect (left to right animation)
+              </p>
+              <p className="text-sm text-gray-600">
+                Link buttons work great for navigation, &quot;Forgot
+                Password?&quot;, &quot;Sign up&quot;, and other text-based
+                actions.
+              </p>
             </div>
           </div>
         </section>

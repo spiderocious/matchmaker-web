@@ -5,13 +5,13 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#3b82f6",
+          DEFAULT: "#1052d4",
           hover: "#2563eb",
           active: "#1d4ed8",
           disabled: "#93c5fd",
         },
         secondary: {
-          DEFAULT: "#dbeafe",
+          DEFAULT: "#e7edfb",
           hover: "#bfdbfe",
           active: "#93c5fd",
           disabled: "#eff6ff",

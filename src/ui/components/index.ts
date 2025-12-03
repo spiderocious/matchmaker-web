@@ -68,3 +68,20 @@ export type { SpinnerProps, SpinnerSize } from "./spinner/spinner.types";
 // Loadable
 export { Loadable } from "./loadable/loadable";
 export type { LoadableProps } from "./loadable/loadable.types";
+
+// Link Button
+export { LinkButton } from "./link-button/link-button";
+export type {
+  LinkButtonProps,
+  LinkButtonVariant,
+} from "./link-button/link-button.types";
+
+// Text
+export { Text } from "./text/text";
+export type {
+  TextProps,
+  TextSize,
+  TextWeight,
+  TextAlign,
+  TextAs,
+} from "./text/text.types";

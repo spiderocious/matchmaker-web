@@ -1,8 +1,8 @@
 import { Hidden } from "@ui/components";
 import { LoginDetails } from "../shared/login-details/login-details";
-import { LoginForm } from "./parts/login-form/login-form";
+import { SignupForm } from "./parts/signup-form/signup-form";
 
-export function LoginScreen() {
+export function SignupScreen() {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Login Details (Desktop Only) */}
@@ -12,9 +12,9 @@ export function LoginScreen() {
         </div>
       </Hidden>
 
-      {/* Right Side - Login Form (All Devices) */}
+      {/* Right Side - Signup Form (All Devices) */}
       <div className="flex-1 flex items-center justify-center bg-gray-50 w-1/2">
-        <LoginForm />
+        <SignupForm />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { LoadableProps } from "./loadable.types";
 import { Spinner } from "../spinner/spinner";
 import { Button } from "../button/button";
-import { FaExclamationTriangle } from "react-icons/fa";
+import { FaExclamationTriangle } from "@ui/icons";
 
 export function Loadable({
   loading,

@@ -1,6 +1,11 @@
 import { HiddenProps, DeviceType } from "./hidden.types";
 
-export function Hidden({ on, children }: HiddenProps) {
+export function Hidden({
+  on,
+  children,
+  className = "",
+  ...props
+}: HiddenProps) {
   const devices = Array.isArray(on) ? on : [on];
 
   const getHiddenClasses = (deviceList: DeviceType[]): string => {
@@ -26,5 +31,11 @@ export function Hidden({ on, children }: HiddenProps) {
     return classes.join(" ");
   };
 
-  return <div className={getHiddenClasses(devices)}>{children}</div>;
+  const combinedClasses = `${getHiddenClasses(devices)} ${className}`.trim();
+
+  return (
+    <div className={combinedClasses} {...props}>
+      {children}
+    </div>
+  );
 }
