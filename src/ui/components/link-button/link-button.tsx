@@ -10,7 +10,7 @@ export function LinkButton({
   ...props
 }: LinkButtonProps) {
   const baseClasses =
-    "inline-block font-medium transition-colors duration-200 relative group cursor-pointer";
+    "flex items-center font-medium transition-colors duration-200 relative group cursor-pointer";
 
   const variantClasses = {
     primary: "text-primary hover:text-primary-hover",

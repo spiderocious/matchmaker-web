@@ -3,7 +3,7 @@ import { FaHeart } from "@ui/icons";
 
 export function LoginDetails() {
   return (
-    <div className="flex flex-col justify-between h-full p-12 bg-[#5c7c5d]">
+    <div className="flex flex-col justify-between h-full p-12">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <FaHeart className="w-6 h-6 text-primary" />
@@ -36,16 +36,20 @@ export function LoginDetails() {
       </div>
 
       {/* Footer */}
-      <div className="flex gap-6 items-center">
-        <Text size="sm" className="text-gray-700">
-          © 2024 Matchmaker Pro, Inc.
-        </Text>
-        <LinkButton variant="default" href="#" className="text-sm">
-          Terms of Service
-        </LinkButton>
-        <LinkButton variant="default" href="#" className="text-sm">
-          Privacy Policy
-        </LinkButton>
+      <div className="flex gap-6 items-center justify-between">
+        <div>
+          <Text size="sm" className="text-gray-700">
+            © 2024 Matchmaker Pro, Inc.
+          </Text>
+        </div>
+        <div>
+          <LinkButton variant="default" href="#" className="text-sm">
+            Terms of Service
+          </LinkButton>
+          <LinkButton variant="default" href="#" className="text-sm">
+            Privacy Policy
+          </LinkButton>
+        </div>
       </div>
     </div>
   );
